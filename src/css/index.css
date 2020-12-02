@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: "Poppins", sans-serif;
+}
+
+a, span {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 45px;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: transparent;
+  border-left: transparent;
+  border-left: transparent;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.05);
+  padding: 16px 0;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__list .list__item {
+  margin-right: 33px;
+}
+
+.header__list .list__link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.header__nav .nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__nav .nav__item {
+  margin-left: 38px;
+}
+
+.header__nav .nav__link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.header__middle {
+  padding: 40px 0 48px;
+}
+
+.header__logo svg {
+  fill: #151515;
+}
+
+.header__middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__form {
+  width: 50%;
+}
+
+.header__form .form__inner {
+  border-radius: 12px;
+  border: 1px solid #d1d1d1;
+  padding: 10px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #F9F9F9;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__form .form__inner svg {
+  margin-left: 30px;
+}
+
+.header__form .form__select {
+  border: transparent;
+  margin-right: 30px;
+  background-color: transparent;
+}
+
+.header__form .form__select::disabled {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #151515;
+}
+
+.header__form .form__option {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #151515;
+  border: none;
+}
+
+.header__form .form__input {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #a9a9a9;
+  border-left: 1px solid #d1d1d1;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-right: transparent;
+  padding-left: 25px;
+  width: 65%;
+  background-color: transparent;
+}
+
+.header__form .form__input:focus {
+  outline: none;
+}
+
+.header__systems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__counter {
+  margin-left: 45px;
+  position: relative;
+}
+
+.header__counter .counter {
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  padding: 1px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.header__bottom {
+  padding: 16px 0;
+  position: relative;
+}
+
+.header__bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #F9F9F9;
+  width: 1260px;
+  height: 55px;
+  z-index: -1;
+  margin: 0 -45px;
+}
+
+.header__bottom .nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__bottom .nav__item {
+  margin-right: 54px;
+}
+
+.header__bottom .nav__link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #151515;
+  position: relative;
+}
+
+.header__bottom .nav__link::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 30%;
+  width: 4px;
+  height: 4px;
+  border: 2px solid #6a983c;
+  border-top: transparent;
+  border-right: transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}

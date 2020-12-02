@@ -1,0 +1,151 @@
+.header {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    border-top: transparent;
+    border-left: transparent;
+    border-left: transparent;
+    border-bottom: 1px solid rgba($color: $black, $alpha: 0.05);
+    padding: 16px 0;
+  }
+  &__list {
+    display: flex;
+    .list__item {
+      margin-right: 33px;
+    }
+    .list__link {
+      @include font($font-open, 400, 12px, 1.5);
+    }
+  }
+  &__nav {
+    .nav__menu {
+      display: flex;
+    }
+    .nav__item {
+      margin-left: 38px;
+    }
+    .nav__link {
+      @include font($font-open, 400, 12px, 1.5);
+      cursor: pointer;
+    }
+  }
+  &__middle {
+    padding: 40px 0 48px;
+  }
+  &__logo {
+    svg {
+      fill: $black;
+    }
+  }
+  &__middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__form {
+    width: 50%;
+    .form {
+      &__inner {
+        border-radius: 12px;
+        border: 1px solid #d1d1d1;
+        padding: 10px 16px;
+        display: flex;
+        justify-content: space-between;
+        background-color: $gray-f9;
+        align-items: center;
+        svg {
+          margin-left: 30px;
+        }
+      }
+      &__select {
+        border: transparent;
+        margin-right: 30px;
+        background-color: transparent;
+        &::disabled {
+          @include font($font-poppins, 600, 15px, 1.2);
+          color: $black;
+        }
+      }
+      &__option {
+        @include font($font-poppins, 600, 15px, 1.2);
+        color: $black;
+        border: none;
+      }
+      &__input {
+        @include font($font-open, 600, 14px, 1.5);
+        color: #a9a9a9;
+        border-left: 1px solid #d1d1d1;
+        border-top: transparent;
+        border-bottom: transparent;
+        border-right: transparent;
+        padding-left: 25px;
+        width: 65%;
+        background-color: transparent;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  &__systems {
+    display: flex;
+  }
+  &__counter {
+    margin-left: 45px;
+    position: relative;
+    .counter {
+      position: absolute;
+      top: 50%;
+      left: -50%;
+      transform: translateX(50%);
+      padding: 1px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: red;
+      color: $white;
+      @include center();
+      @include font($font-poppins, 400, 12px, 1);
+    }
+  }
+  &__bottom {
+    padding: 16px 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $gray-f9;
+      width: 1260px;
+      height: 55px;
+      z-index: -1;
+      margin: 0 -45px;
+    }
+    .nav {
+      &__menu {
+        display: flex;
+      }
+      &__item {
+        margin-right: 54px;
+      }
+      &__link {
+        @include font($font-poppins, 500, 15px, 1.5);
+        color: $black;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          right: -15px;
+          top: 30%;
+          width: 4px;
+          height: 4px;
+          border: 2px solid #6a983c;
+          border-top: transparent;
+          border-right: transparent;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
