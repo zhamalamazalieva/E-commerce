@@ -1,0 +1,28 @@
+.hero{
+    $self:&;
+    &__row{
+        padding-top: 65px;
+    }
+    &__item--left{
+        #{$self}__title{
+            @include font($font-poppins, 600, 18px, 1.5);
+            color: $black;
+            margin-bottom: 50px;
+        }
+    }
+    &__nav{
+        .nav{
+            &__link{
+                @include font($font-open, 400, 14px, 1.5);
+                color:$green;
+                margin-bottom: 15px;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+    &__button{
+        margin-top: 35px;
+    }
+
+}

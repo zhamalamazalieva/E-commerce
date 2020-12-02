@@ -38,9 +38,7 @@
     }
   }
   &__middle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include center(flex, space-between, center);
   }
   &__form {
     width: 50%;
@@ -49,10 +47,8 @@
         border-radius: 12px;
         border: 1px solid #d1d1d1;
         padding: 10px 16px;
-        display: flex;
-        justify-content: space-between;
         background-color: $gray-f9;
-        align-items: center;
+        @include center(flex, space-between, center);
         svg {
           margin-left: 30px;
         }
@@ -133,6 +129,7 @@
         @include font($font-poppins, 500, 15px, 1.5);
         color: $black;
         position: relative;
+        cursor: pointer;
         &::after {
           content: "";
           position: absolute;

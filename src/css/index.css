@@ -54,6 +54,34 @@ table {
   border-spacing: 0;
 }
 
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.333%;
+}
+
+.col-5 {
+  width: 41.666%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.31%;
+}
+
+.col-8 {
+  width: 66.64%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -78,6 +106,46 @@ ul li {
   max-width: 1260px;
   margin: 0 auto;
   padding: 0 45px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.btn {
+  padding: 16px 20px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  border: none;
+}
+
+.btn span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1;
+  color: #151515;
+  position: relative;
+}
+
+.btn span::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 30%;
+  -webkit-transform: translateX(-30%);
+          transform: translateX(-30%);
+  width: 4px;
+  height: 4px;
+  border: 2px solid #151515;
+  border-left: transparent;
+  border-top: transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .header__top {
@@ -157,13 +225,13 @@ ul li {
   border-radius: 12px;
   border: 1px solid #d1d1d1;
   padding: 10px 16px;
+  background-color: #f9f9f9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #F9F9F9;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -263,7 +331,7 @@ ul li {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   width: 1260px;
   height: 55px;
   z-index: -1;
@@ -287,6 +355,7 @@ ul li {
   line-height: 1.5;
   color: #151515;
   position: relative;
+  cursor: pointer;
 }
 
 .header__bottom .nav__link::after {
@@ -301,4 +370,32 @@ ul li {
   border-right: transparent;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.hero__row {
+  padding-top: 65px;
+}
+
+.hero__item--left .hero__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #151515;
+  margin-bottom: 50px;
+}
+
+.hero__nav .nav__link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6a983c;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hero__button {
+  margin-top: 35px;
 }
