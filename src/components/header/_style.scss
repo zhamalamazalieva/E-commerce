@@ -40,9 +40,9 @@
   &__middle {
     @include center(flex, space-between, center);
   }
-  &__form {
+  &__searchbar {
     width: 50%;
-    .form {
+    .searchbar {
       &__inner {
         border-radius: 12px;
         border: 1px solid #d1d1d1;
@@ -53,20 +53,10 @@
           margin-left: 30px;
         }
       }
-      &__select {
-        border: transparent;
-        margin-right: 30px;
-        background-color: transparent;
-        &::disabled {
-          @include font($font-poppins, 600, 15px, 1.2);
-          color: $black;
-        }
+      form{
+        width: 70%;
       }
-      &__option {
-        @include font($font-poppins, 600, 15px, 1.2);
-        color: $black;
-        border: none;
-      }
+      
       &__input {
         @include font($font-open, 600, 14px, 1.5);
         color: #a9a9a9;
@@ -81,6 +71,33 @@
           outline: none;
         }
       }
+      &__dropdown{
+        position: relative;
+        display: inline-block;
+        width: 30%;
+        .dropdown__button{
+          @include font($font-poppins, 600, 15px, 1.2);
+          color: $black;
+        }
+        .dropdown__list {
+          display: none;
+          margin-right: 30px;
+          position: absolute;
+          top:25px;
+          left: 0;
+          width: 100%;
+          z-index: 2;
+          background-color: $gray-f9;
+        }
+        .dropdown__item {
+          @include font($font-poppins, 600, 15px, 1.2);
+          color: $black;
+          margin-top: 15px;
+        }
+      }
+      
+      
+      
     }
   }
   &__systems {

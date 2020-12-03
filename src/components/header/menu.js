@@ -14,6 +14,7 @@ const Menu = () => {
         <li class="nav__item"><a class="nav__link">Pharmacy</a></li>
     </ul>
     `;
+    
     return tagNav.outerHTML;
     console.log('tagNav');
 };

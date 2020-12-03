@@ -4,14 +4,14 @@
         padding-top: 65px;
     }
     &__item--left{
-        #{$self}__title{
+        #{$self}__menu-title{
             @include font($font-poppins, 600, 18px, 1.5);
             color: $black;
-            margin-bottom: 50px;
+            margin-bottom: 15px;
         }
     }
-    &__nav{
-        .nav{
+    &__menu{
+        .menu{
             &__link{
                 @include font($font-open, 400, 14px, 1.5);
                 color:$green;
@@ -21,8 +21,46 @@
             }
         }
     }
-    &__button{
-        margin-top: 35px;
+    &__button--category{
+        margin-top: 30px;
+    }
+    &__item--right{
+        position: relative;
+        min-width: 90%;
+        min-height: 280px;
+        background-color: $gray-f9;
+
+    }
+    &__opacity{
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: 1;
+        // background-color: rgba($color: $black, $alpha: 0.1);
+        backdrop-filter: blur(5px);
+    }
+    &__text{
+        position: absolute;
+        left: 33px;
+        top: 48px;
+        z-index: 4;
+    }
+    &__suptitle{
+        @include font($font-poppins, 600, 12px, 1.2);
+        color: $green;
+        margin-bottom: 18px;
+    }
+    &__title{
+        @include font($font-poppins, 600, 22px, 1.5);
+        color: $black;
+        margin-bottom: 85px;
+    }
+    &__img{
+        max-width: 100%;
+        min-width: 100%;
+        height: auto;
     }
 
 }

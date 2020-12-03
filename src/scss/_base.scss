@@ -22,28 +22,41 @@ ul li {
     display: flex;
     flex-wrap:wrap;
 }
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
 .btn{
-    padding: 16px 20px;
+    padding: 12px 30px 12px 15px;
     border-radius: 12px;
     background-color: $gray-f9;
     border:none;
-    span{
-        @include font($font-poppins, 700, 15px,1);
-        color: $black;
-        position: relative;
-        &::after{
-            content: '';
-            position: absolute;
-            right: -10px;
-            top: 30%;
-            transform: translateX(-30%);
-            width: 4px;
-            height: 4px;
-            border: 2px solid $black;
-            border-left: transparent;
-            border-top: transparent;
-            transform: rotate(-45deg);
-
-        }
+    position: relative;
+    @include font($font-poppins, 700, 15px, 1.5);
+    color: $black;
+    svg{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 8px;
+        fill: none;
+        stroke: $black;
+        margin-left: 15px;
     }
+    &:hover{
+        outline: none;
+    }
+    &::focus{
+        outline: none;
+    }
+}
+.btn--green{
+    border: 2px solid green;
+    background-color: transparent;
+    svg{
+        stroke: $green;
+    }
+ 
+    
 }
