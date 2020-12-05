@@ -4,7 +4,14 @@ const Menu = () => {
     tagNav.innerHTML = 
     `
     <ul class="nav__menu menu">
-        <li class="nav__item"><a class="nav__link">Bakery</a></li>
+        <li class="nav__item"><a class="nav__link">Bakery</a>
+            <ul class="dropdown__list">
+                <li class="dropdown__item"><a class="dropwdown__link">Chocolate cake</a></li>
+                <li class="dropdown__item"><a class="dropwdown__link">Caramel cake</a></li>
+                <li class="dropdown__item"><a class="dropwdown__link">Apple pie</a></li>
+            </ul>
+        
+        </li>
         <li class="nav__item"><a class="nav__link">Fruit and vegetables</a></li>
         <li class="nav__item"><a class="nav__link">Meat and fish</a></li>
         <li class="nav__item"><a class="nav__link">Drinks</a></li>
