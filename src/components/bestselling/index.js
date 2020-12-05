@@ -10,12 +10,16 @@ const bestSelling = () => {
                 ${bestSellingLeft}
             </div>
             <div class="col-9">
-                <div class="row bestselling__row">
+                <div class="row margin">
                     <div class="col-4">
                         ${bestSellingRight}
                     </div>
-                    <div class="col-4"></div>
-                    <div class="col-4"></div>
+                    <div class="col-4">
+                       ${bestSellingRight}
+                    </div>
+                    <div class="col-4">
+                       ${bestSellingRight}
+                    </div>
                 </div>
             </div>
         </div>  

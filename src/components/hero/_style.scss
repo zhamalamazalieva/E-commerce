@@ -11,6 +11,9 @@
             margin-bottom: 20px;
         }
     }
+    &__wrapper{
+        margin: 0 -15px;
+    }
     &__menu{  
         .menu{
             &__link{
@@ -28,7 +31,7 @@
     &__item--right{
         position: relative;
         background-color: $gray-f9;
-        margin-left: 30px;
+        margin: 0 15px;
         border-radius: 12px;
 
     }
