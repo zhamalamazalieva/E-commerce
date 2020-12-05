@@ -1,5 +1,6 @@
 .hero{
     $self:&;
+
     &__row{
         padding-top: 65px;
     }
@@ -7,13 +8,13 @@
         #{$self}__menu-title{
             @include font($font-poppins, 600, 18px, 1.5);
             color: $black;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
     }
-    &__menu{
+    &__menu{  
         .menu{
             &__link{
-                @include font($font-open, 400, 14px, 1.5);
+                @include font($font-open, 400, 14px, 1.3);
                 color:$green;
                 margin-bottom: 15px;
                 text-decoration: underline;
@@ -22,13 +23,13 @@
         }
     }
     &__button--category{
-        margin-top: 30px;
+        margin-top: 20px;
     }
     &__item--right{
         position: relative;
-        min-width: 90%;
-        min-height: 280px;
         background-color: $gray-f9;
+        margin-left: 30px;
+        border-radius: 12px;
 
     }
     &__opacity{
@@ -38,8 +39,9 @@
         min-width: 100%;
         min-height: 100%;
         z-index: 1;
-        // background-color: rgba($color: $black, $alpha: 0.1);
-        backdrop-filter: blur(5px);
+        background-color: rgba($color: $black, $alpha: 0.6);
+        border-radius: 12px;
+        // backdrop-filter: blur(5px);
     }
     &__text{
         position: absolute;
@@ -54,13 +56,14 @@
     }
     &__title{
         @include font($font-poppins, 600, 22px, 1.5);
-        color: $black;
+        color: $white;
         margin-bottom: 85px;
     }
     &__img{
         max-width: 100%;
         min-width: 100%;
         height: auto;
+        border-radius: 12px;
     }
 
 }

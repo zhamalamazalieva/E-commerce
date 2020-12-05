@@ -40,66 +40,74 @@
   &__middle {
     @include center(flex, space-between, center);
   }
-  &__searchbar {
-    width: 50%;
-    .searchbar {
-      &__inner {
-        border-radius: 12px;
-        border: 1px solid #d1d1d1;
-        padding: 10px 16px;
-        background-color: $gray-f9;
-        @include center(flex, space-between, center);
-        svg {
-          margin-left: 30px;
+  .searchbar {
+    padding: 10px 16px;
+    background-color: $gray-f9;
+    max-height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+      &__title{
+        @include font($font-poppins, 600, 16px, 1.2);
+        position: relative;
+        cursor: pointer;
+        svg{
+          stroke: $black;
+          position: absolute;
+          right: -25px;
+          top:50%;
+          transform: translateY(-50%);
         }
       }
-      form{
-        width: 70%;
-      }
-      
       &__input {
         @include font($font-open, 600, 14px, 1.5);
         color: #a9a9a9;
+        border: none;
         border-left: 1px solid #d1d1d1;
-        border-top: transparent;
-        border-bottom: transparent;
-        border-right: transparent;
         padding-left: 25px;
-        width: 65%;
+        margin-left: 48px;
+        min-width:270px;
         background-color: transparent;
         &:focus {
           outline: none;
         }
       }
-      &__dropdown{
-        position: relative;
-        display: inline-block;
-        width: 30%;
-        .dropdown__button{
-          @include font($font-poppins, 600, 15px, 1.2);
-          color: $black;
+      &__list{
+        max-height: 20px;
+
+
+        &.is-active{
+          li{
+            display: block;
+          }
         }
-        .dropdown__list {
-          display: none;
-          margin-right: 30px;
-          position: absolute;
-          top:25px;
-          left: 0;
-          width: 100%;
-          z-index: 2;
-          background-color: $gray-f9;
-        }
-        .dropdown__item {
-          @include font($font-poppins, 600, 15px, 1.2);
-          color: $black;
-          margin-top: 15px;
-        }
+      }
+      &__item{
+        display: none;
+        @include font($font-poppins, 600, 14px, 1.2);
+        padding: 0 10px;
+        margin-top: 25px;
+        background-color: red;
+
+
+
+        
+      }
+      &__button{
+        background-color: transparent;
+        padding: 0;
+        outline: none;
+        border:none;
+        height: 16px;
+        width: 16px;
+        @include center();
+
       }
       
       
       
     }
-  }
+  
   &__systems {
     display: flex;
   }

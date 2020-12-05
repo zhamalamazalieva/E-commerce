@@ -33,7 +33,7 @@ ul li {
     background-color: $gray-f9;
     border:none;
     position: relative;
-    @include font($font-poppins, 700, 15px, 1.5);
+    @include font($font-poppins, 500, 15px, 1.5);
     color: $black;
     svg{
         position: absolute;
@@ -46,16 +46,23 @@ ul li {
     }
     &:hover{
         outline: none;
+        box-shadow: 0 0 10px rgba($color:$green, $alpha: 0.7);
     }
-    &::focus{
+    &:focus{
         outline: none;
     }
 }
 .btn--green{
-    border: 2px solid green;
-    background-color: transparent;
+    // border: 2px solid green;
+    background-color: $green;
+    color: $white;
+    outline: none;
+    transition: 0.3s;
     svg{
-        stroke: $green;
+        stroke: $white;
+    }
+    &:hover{
+        background-color: rgba($color:$green, $alpha: 0.7);
     }
  
     

@@ -137,7 +137,7 @@ ul li {
   border: none;
   position: relative;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 15px;
   line-height: 1.5;
   color: #151515;
@@ -156,19 +156,28 @@ ul li {
 
 .btn:hover {
   outline: none;
+  -webkit-box-shadow: 0 0 10px rgba(106, 152, 60, 0.7);
+          box-shadow: 0 0 10px rgba(106, 152, 60, 0.7);
 }
 
-.btn::focus {
+.btn:focus {
   outline: none;
 }
 
 .btn--green {
-  border: 2px solid green;
-  background-color: transparent;
+  background-color: #6a983c;
+  color: white;
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .btn--green svg {
-  stroke: #6a983c;
+  stroke: white;
+}
+
+.btn--green:hover {
+  background-color: rgba(106, 152, 60, 0.7);
 }
 
 .header__top {
@@ -240,85 +249,90 @@ ul li {
           align-items: center;
 }
 
-.header__searchbar {
-  width: 50%;
-}
-
-.header__searchbar .searchbar__inner {
-  border-radius: 12px;
-  border: 1px solid #d1d1d1;
+.header .searchbar {
   padding: 10px 16px;
   background-color: #f9f9f9;
+  max-height: 42px;
+  border-radius: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.header__searchbar .searchbar__inner svg {
-  margin-left: 30px;
+.header .searchbar__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  position: relative;
+  cursor: pointer;
 }
 
-.header__searchbar .searchbar form {
-  width: 70%;
+.header .searchbar__title svg {
+  stroke: #151515;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-.header__searchbar .searchbar__input {
+.header .searchbar__input {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.5;
   color: #a9a9a9;
+  border: none;
   border-left: 1px solid #d1d1d1;
-  border-top: transparent;
-  border-bottom: transparent;
-  border-right: transparent;
   padding-left: 25px;
-  width: 65%;
+  margin-left: 48px;
+  min-width: 270px;
   background-color: transparent;
 }
 
-.header__searchbar .searchbar__input:focus {
+.header .searchbar__input:focus {
   outline: none;
 }
 
-.header__searchbar .searchbar__dropdown {
-  position: relative;
-  display: inline-block;
-  width: 30%;
+.header .searchbar__list {
+  max-height: 20px;
 }
 
-.header__searchbar .searchbar__dropdown .dropdown__button {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 1.2;
-  color: #151515;
+.header .searchbar__list.is-active li {
+  display: block;
 }
 
-.header__searchbar .searchbar__dropdown .dropdown__list {
+.header .searchbar__item {
   display: none;
-  margin-right: 30px;
-  position: absolute;
-  top: 25px;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  background-color: #f9f9f9;
-}
-
-.header__searchbar .searchbar__dropdown .dropdown__item {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.2;
-  color: #151515;
-  margin-top: 15px;
+  padding: 0 10px;
+  margin-top: 25px;
+  background-color: red;
+}
+
+.header .searchbar__button {
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__systems {
@@ -420,14 +434,14 @@ ul li {
   font-size: 18px;
   line-height: 1.5;
   color: #151515;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .hero__menu .menu__link {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.3;
   color: #6a983c;
   margin-bottom: 15px;
   text-decoration: underline;
@@ -435,14 +449,14 @@ ul li {
 }
 
 .hero__button--category {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .hero__item--right {
   position: relative;
-  min-width: 90%;
-  min-height: 280px;
   background-color: #f9f9f9;
+  margin-left: 30px;
+  border-radius: 12px;
 }
 
 .hero__opacity {
@@ -452,8 +466,8 @@ ul li {
   min-width: 100%;
   min-height: 100%;
   z-index: 1;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  background-color: rgba(21, 21, 21, 0.6);
+  border-radius: 12px;
 }
 
 .hero__text {
@@ -477,7 +491,7 @@ ul li {
   font-weight: 600;
   font-size: 22px;
   line-height: 1.5;
-  color: #151515;
+  color: white;
   margin-bottom: 85px;
 }
 
@@ -485,4 +499,5 @@ ul li {
   max-width: 100%;
   min-width: 100%;
   height: auto;
+  border-radius: 12px;
 }

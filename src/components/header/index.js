@@ -27,7 +27,15 @@ const Header = () => {
     </div>
     `;
     document.body.appendChild(tagHeader);
-    return tagHeader;
+    
+
+    const ul = document.querySelector('.searchbar__list');
+    const h3 = document.querySelector('.searchbar__title');
+     h3.addEventListener('click', () => {
+         ul.classList.toggle('is-active');
+     });
+     return tagHeader;
+
 }
 Header ();
 
