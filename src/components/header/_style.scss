@@ -7,7 +7,7 @@
     border-left: transparent;
     border-bottom: 1px solid rgba($color: $black, $alpha: 0.05);
     padding: 16px 0;
-    .nav{
+    .nav {
       &__menu {
         display: flex;
       }
@@ -29,7 +29,7 @@
         @include font($font-open, 400, 12px, 1.5);
       }
     }
-  } 
+  }
   &__middle {
     padding: 40px 0 48px;
     @include center(flex, space-between, center);
@@ -41,91 +41,86 @@
       display: flex;
       align-items: center;
       position: relative;
-        &__title{
-          @include font($font-poppins, 600, 16px, 1.2);
-          position: relative;
-          cursor: pointer;
-          svg{
-            stroke: $black;
-            position: absolute;
-            right: -25px;
-            top:50%;
-            transform: translateY(-50%);
-          }
-        }
-        &__list{
-          width: 35%;
+      &__title {
+        @include font($font-poppins, 600, 16px, 1.2);
+        position: relative;
+        cursor: pointer;
+        svg {
+          stroke: $black;
           position: absolute;
-          left: 0;
-          top: 40px;
-          background-color: red;
-          z-index: 2;
-          border-radius: 12px;
-          border-top-left-radius: 0;
-          border-top-right-radius: 0;
-          &.is-active{
-            li{
-              display: block;
-              animation: fade .4s ease-in;
-              transition: 0.4s;
-              @keyframes fade {
-                0%{
-                  height: 0%;
-                }
-                25%{
-                  height: 25%;
-                }
-                50%{
-                  height: 50%;
-                }
-                100%{
-                  height: 100%;
-                }
-                }
-                
+          right: -25px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      &__list {
+        width: 35%;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        background-color: red;
+        z-index: 2;
+        border-radius: 12px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        &.is-active {
+          li {
+            display: block;
+            animation: fade 0.4s ease-in;
+            transition: 0.4s;
+            @keyframes fade {
+              0% {
+                height: 0%;
+              }
+              25% {
+                height: 25%;
+              }
+              50% {
+                height: 50%;
+              }
+              100% {
+                height: 100%;
               }
             }
           }
         }
-        &__item{
-          display: none;
-          @include font($font-poppins, 600, 14px, 1.2);
-          padding:5px 15px;
-          cursor: pointer;
-        }
-        &__button{
-          background-color: transparent;
-          padding: 0;
-          outline: none;
-          border:none;
-          height: 16px;
-          width: 16px;
-          @include center();
-          cursor: pointer;
-        }
-        &__input {
-          @include font($font-open, 600, 14px, 1.5);
-          color: #a9a9a9;
-          border: none;
-          border-left: 1px solid #d1d1d1;
-          padding-left: 25px;
-          margin-left: 48px;
-          min-width:270px;
-          background-color: transparent;
-          &:focus {
-            outline: none;
-          }
-        }
-      
       }
-
+      &__item {
+      display: none;
+      @include font($font-poppins, 600, 14px, 1.2);
+      padding: 5px 15px;
+      cursor: pointer;
+      }
+      &__button {
+      background-color: transparent;
+      padding: 0;
+      outline: none;
+      border: none;
+      height: 16px;
+      width: 16px;
+      @include center();
+      cursor: pointer;
+      }
+      &__input {
+      @include font($font-open, 600, 14px, 1.5);
+      color: #a9a9a9;
+      border: none;
+      border-left: 1px solid #d1d1d1;
+      padding-left: 25px;
+      margin-left: 48px;
+      min-width: 270px;
+      background-color: transparent;
+      &:focus {
+        outline: none;
+      }
+      }
+    }
   }
   &__logo {
     svg {
       fill: $black;
     }
   }
-  
   &__systems {
     display: flex;
   }
@@ -165,41 +160,39 @@
       display: flex;
       &__title {
         @include font($font-poppins, 500, 15px, 1);
-        color:$black;
+        color: $black;
         cursor: pointer;
         position: relative;
         margin-right: 54px;
         transition: 0.3s;
-        &:last-child{
+        &:last-child {
           margin-right: 0;
         }
-        &:hover{
+        &:hover {
           color: $green;
-          svg{
+          svg {
             stroke: $green;
           }
         }
-        svg{
+        svg {
           stroke: $black;
           position: absolute;
-          top:50%;
+          top: 50%;
           transform: translateY(-50%);
           right: -18px;
         }
-    }
-    &__link {
-      @include font($font-poppins, 500, 15px, 1.5);
-      color: $black;
-      display: none;
-      width: 100%;
-      
-    }
-    &.is-active{
-      li{
-          display: block;
       }
+      &__link {
+        @include font($font-poppins, 500, 15px, 1.5);
+        color: $black;
+        display: none;
+        width: 100%;
+      }
+      &.is-active {
+        li {
+          display: block;
+        }
+      }
+    }
   }
-  }
-  }
- 
 }
