@@ -34,6 +34,18 @@ const Header = () => {
      h3.addEventListener('click', () => {
          ul.classList.toggle('is-active');
      });
+
+     const dropdown = () => {
+        const dropdownList = document.querySelectorAll('.menu__list');
+        const li = document.querySelectorAll('.menu__item');
+        dropdownList.forEach((item) =>
+            item.addEventListener('click', () => {
+                item.classList.toggle('is-active')
+        }))
+    }
+    dropdown();
+
+
      return tagHeader;
 
 }

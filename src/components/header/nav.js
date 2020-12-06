@@ -1,7 +1,7 @@
 const Nav = () =>{
-    const tagNav = document.createElement('nav');
-    tagNav.className = 'header__nav nav';
-    tagNav.innerHTML = 
+    const nav = document.createElement('nav');
+    nav.className = 'header__nav nav';
+    nav.innerHTML = 
     `
     <ul class="nav__menu menu">
         <li class="nav__item"><a class="nav__link">Blog</a></li>
@@ -9,7 +9,7 @@ const Nav = () =>{
         <li class="nav__item"><a class="nav__link">Careers</a></li>
     </ul>
     `;
-    return tagNav.outerHTML;
+    return nav.outerHTML;
 
 };
 

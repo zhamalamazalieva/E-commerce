@@ -1,7 +1,7 @@
 const Systems = () => {
-    const tagDiv = document.createElement('div');
-    tagDiv.className = 'header__systems';
-    tagDiv.innerHTML = 
+    const div = document.createElement('div');
+    div.className = 'header__systems';
+    div.innerHTML = 
     `
     <a href="#" class="header__login">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +18,7 @@ const Systems = () => {
         <span class="counter">4</span>        
     </a>
     `;
-    return tagDiv.outerHTML;
+    return div.outerHTML;
 };
 
 export default Systems();
