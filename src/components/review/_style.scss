@@ -1,0 +1,48 @@
+.review{
+    &__row{
+        padding-top: 64px;
+    }
+    &__title{
+        @include font($font-poppins, 600, 18px, 1.5);
+        color: $black;
+        margin-bottom: 40px;
+    }
+    &__item{
+        max-width: 370px;
+        max-height: 200px;
+        border-radius: 12px;
+        background-color: $gray-f9;
+        padding: 24px 34px 40px 34px;
+        position: relative;
+    }
+    &__description{
+        @include font($font-poppins, 500, 15px, 22px);
+        color: $black;
+        text-align: center;
+    }
+    &__author{
+        @include font($font-poppins, 600, 12px, 1);
+        color: $darkgray;
+        text-align: center;
+        margin: 24px 0 16px;
+    }
+    &__img{
+        // width: 48px;
+        // height: 48px;
+        img{
+            height: 48px;
+            width: 48px;
+            position: absolute;
+            bottom: -25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+
+        }
+
+    }
+    .slider{
+        @include center();
+        flex-direction: column;
+    }
+}

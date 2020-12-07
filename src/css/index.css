@@ -733,3 +733,71 @@ ul li {
   line-height: 1.5;
   color: #151515;
 }
+
+.review__row {
+  padding-top: 64px;
+}
+
+.review__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #151515;
+  margin-bottom: 40px;
+}
+
+.review__item {
+  max-width: 370px;
+  max-height: 200px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  padding: 24px 34px 40px 34px;
+  position: relative;
+}
+
+.review__description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  text-align: center;
+}
+
+.review__author {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1;
+  color: #575757;
+  text-align: center;
+  margin: 24px 0 16px;
+}
+
+.review__img img {
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  bottom: -25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.review .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
