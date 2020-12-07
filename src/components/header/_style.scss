@@ -57,8 +57,8 @@
         width: 35%;
         position: absolute;
         left: 0;
-        top: 40px;
-        background-color: red;
+        top: 35px;
+        background-color:$gray-f9;
         z-index: 2;
         border-radius: 12px;
         border-top-left-radius: 0;
@@ -90,6 +90,16 @@
       @include font($font-poppins, 600, 14px, 1.2);
       padding: 5px 15px;
       cursor: pointer;
+      transition: 0.3s;
+      &:last-child{
+        border-bottom-left-radius:12px;
+        border-bottom-right-radius:12px;
+      }
+      &:hover{
+        background-color: $green;
+        color: $white;
+
+      }
       }
       &__button {
       background-color: transparent;
