@@ -79,7 +79,7 @@ table {
 }
 
 .col-9 {
-  width: 74.973%;
+  width: 75%;
 }
 
 .col-12 {
@@ -118,6 +118,16 @@ ul li {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .flex {
@@ -846,6 +856,14 @@ ul li {
   margin: 40px -15px 70px -15px;
 }
 
+.blog__row {
+  margin: 0 -15px;
+}
+
+.blog__item {
+  margin: 40px 15px 0 15px;
+}
+
 .blog__item--left {
   width: 470px;
   height: 400px;
@@ -855,9 +873,50 @@ ul li {
   background-color: red;
   background-size: cover;
   background-position: center;
-  margin-top: 40px;
 }
 
+.blog__img {
+  width: 270px;
+  height: 180px;
+  background-image: url("/src/img/jpg/blog1.png");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 24px;
+  border-radius: 12px;
+}
+
+.blog__suptitle {
+  color: #6a983c;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
+.blog__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #151515;
+  margin-bottom: 16px;
+}
+
+.blog__author, .blog__time {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  color: #151515;
+}
+
+.blog__author {
+  margin-right: 16px;
+}
+
+/*Blog LEFT
+=================================*/
 .text {
   padding: 24px;
 }
@@ -908,5 +967,50 @@ ul li {
 }
 
 .text__author {
+  margin-right: 16px;
+}
+
+/*Blog RIGHT
+=================================*/
+.right {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.right__img {
+  width: 96px;
+  height: 96px;
+  border-radius: 12px;
+}
+
+.right__img img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.right__description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #151515;
+  width: 225px;
+  margin-bottom: 16px;
+}
+
+.right__author, .right__time {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  color: #151515;
+}
+
+.right__author {
   margin-right: 16px;
 }

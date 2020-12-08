@@ -1,5 +1,7 @@
 import Title from '../function/title.js';
 import BlogLeft from '../blog/blog_left.js';
+import BlogMiddle from '../blog/blog_middle.js';
+import BlogRight from '../blog/blog_right.js'
 const Blog = () => {
     const section = document.createElement('section');
     section.className = 'blog';
@@ -12,10 +14,10 @@ const Blog = () => {
                 ${BlogLeft}
             </div>
             <div class="col-3">
-            
+                ${BlogMiddle}
             </div>
             <div class="col-4">
-            
+                ${BlogRight}
             </div>
         </div>
     </div>

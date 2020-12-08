@@ -1,4 +1,10 @@
 .blog{
+    &__row{
+        margin: 0 -15px;
+    }
+    &__item{
+        margin: 40px 15px 0 15px;
+    }
     &__item--left{
         width: 470px;
         height: 400px;
@@ -8,10 +14,39 @@
         background-color: red;
         background-size: cover;
         background-position: center;
-        margin-top: 40px;
 
     }
+    &__img{
+        width: 270px;
+        height: 180px;
+        background-image: url('/src/img/jpg/blog1.png');
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 24px;
+        border-radius: 12px;
+    }
+    &__suptitle{
+        color: $green;
+        @include font($font-poppins, 600, 12px, 18px);
+
+        margin-bottom: 10px;
+    }
+    &__title{
+        @include font($font-poppins, 600, 18px, 22px);
+        color: $black;
+        margin-bottom: 16px;
+    }
+    &__author, &__time{
+        @include font($font-open, 400, 12px, 1);
+        color: $black;
+    }
+    &__author{
+        margin-right: 16px;
+    }
+    
 }
+/*Blog LEFT
+=================================*/
 .text{
     padding: 24px;
         &__avatar{
@@ -48,3 +83,36 @@
             margin-right: 16px;
         }
 } 
+/*Blog RIGHT
+=================================*/
+.right{
+    
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    &__img{
+        width: 96px;
+        height: 96px;
+        border-radius: 12px;
+
+        img{
+            max-width: 100%;
+            border-radius: 12px;
+
+        }
+    }
+    &__description{
+        @include font($font-poppins, 500, 15px, 1.5);
+        color: $black;
+        width: 225px;
+        margin-bottom: 16px;
+    }
+    &__author, &__time{
+        @include font($font-open, 400, 12px, 1);
+        color: $black;
+    }
+    &__author{
+        margin-right: 16px;
+    }
+}
+

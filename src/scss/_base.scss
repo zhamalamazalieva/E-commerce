@@ -22,6 +22,10 @@ ul li {
     display: flex;
     flex-wrap:wrap;
 }
+.column{
+    display: flex;
+    flex-direction: column;
+}
 .flex{
     display:flex;
     align-items: center;

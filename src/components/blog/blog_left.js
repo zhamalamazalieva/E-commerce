@@ -1,6 +1,6 @@
 const BlogLeft = () => {
     const div = document.createElement('div');
-    div.className = 'blog__item--left';
+    div.className = 'blog__item--left blog__item';
     div.innerHTML =
     `
     <div class="blog__text text">
