@@ -5,30 +5,26 @@
     &__title{
         @include font($font-poppins, 600, 18px, 1.5);
         color: $black;
-        margin-bottom: 40px;
     }
     &__item{
         max-width: 370px;
         max-height: 200px;
         border-radius: 12px;
-        background-color: $gray-f9;
-        padding: 24px 34px 40px 34px;
+        background-color: yellow;
+        padding: 24px 36px 40px 36px;
         position: relative;
+        text-align: center;
     }
     &__description{
         @include font($font-poppins, 500, 15px, 22px);
         color: $black;
-        text-align: center;
     }
     &__author{
         @include font($font-poppins, 600, 12px, 1);
         color: $darkgray;
-        text-align: center;
         margin: 24px 0 16px;
     }
     &__img{
-        // width: 48px;
-        // height: 48px;
         img{
             height: 48px;
             width: 48px;
@@ -37,11 +33,10 @@
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 50%;
-
         }
-
     }
     .slider{
+        margin: 40px 0 60px;
         @include center();
         flex-direction: column;
     }
