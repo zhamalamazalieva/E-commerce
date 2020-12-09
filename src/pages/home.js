@@ -19,6 +19,7 @@ const Home = () => {
     ${Blog()}
 
     `;
+    document.body.append(HomePage);
     return HomePage;
 };
 Home();
