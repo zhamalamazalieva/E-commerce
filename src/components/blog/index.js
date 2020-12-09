@@ -22,7 +22,6 @@ const Blog = () => {
         </div>
     </div>
     `;
-    document.body.append(section);
     return section.outerHTML;
 };
 export default Blog;

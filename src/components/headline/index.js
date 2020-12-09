@@ -23,7 +23,6 @@ const Headline = () => {
         </div>
     </div>
     `;
-    document.body.append(section);
     return section.outerHTML;
     console.log('aihj')
 };

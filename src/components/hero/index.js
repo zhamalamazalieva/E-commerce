@@ -18,7 +18,7 @@ const Hero = () =>{
         </div>
     </div>
     `;
-    document.body.appendChild(tagSection);
+
     return tagSection;
 };
 

@@ -37,7 +37,6 @@ const Review = () => {
     </div>
     </div>
     `;
-    document.body.appendChild(section);
     $('.slider').slick({
         arrows:false,
         dots:true,

@@ -28,7 +28,6 @@ const bestSelling = () => {
         </div>  
     </div>
     `;
-    document.body.append(section);
     return section.outerHTML;
 };
 
