@@ -1,18 +1,20 @@
-const SideBar = (title, array, button) => {
-    const SideBarItem = document.createElement('div');
+const SideBar = (MenuTitle, ArrayOfList, button) => {
+    const SideBarItem = document.createElement('aside');
     SideBarItem.className = 'sidebar';
     SideBarItem.innerHTML = 
     `
-    <h2 class="sidebar__title">${title}</h2>
+    <h2 class="sidebar__title">${MenuTitle}</h2>
     <ul class="sidebar__menu menu">
 
 
-        ${array.map(item => {
+        ${ArrayOfList.map(item => {
             const li = document.createElement('li')
             const a = document.createElement('a')
 
             li.className = 'menu__item'
             a.className = 'menu__link'
+
+            a.setAttribute('href', '#')
 
             li.append(a)
             a.innerHTML = item
