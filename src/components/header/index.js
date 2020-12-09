@@ -45,9 +45,23 @@ const Header = () => {
     }
     dropdown();
 
+    const headerBottom = () => {
+        const ul = document.querySelectorAll('.menu__list');
+        const h3 = document.querySelectorAll('.menu__title');
 
+        h3.forEach((item, index) => {
+            item.addEventListener('click', (event) =>{
+                event.target.classList.toggle('is-active');
+                ul.forEach((e, i) => {
+                    if (i != index) e.classList.remove('is-active');
+                });
+                ul[index].classList.toggle('is-active');
+            });
+        });
+    };
+    headerBottom();
      return tagHeader;
 
 }
-Header ();
+export default Header;
 

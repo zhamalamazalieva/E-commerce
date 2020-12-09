@@ -32,4 +32,4 @@ const bestSelling = () => {
     return section.outerHTML;
 };
 
-bestSelling();
+export default bestSelling;

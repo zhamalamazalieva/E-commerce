@@ -2,9 +2,7 @@
   &__top {
     display: flex;
     justify-content: space-between;
-    border-top: transparent;
-    border-left: transparent;
-    border-left: transparent;
+    border: none;
     border-bottom: 1px solid rgba($color: $black, $alpha: 0.05);
     padding: 16px 0;
     .nav {
@@ -17,7 +15,10 @@
       &__link {
         @include font($font-open, 400, 12px, 1.5);
         cursor: pointer;
-        position: relative;
+        transition: 0.3s;
+        &:hover{
+          color: $green;
+        }
       }
     }
     .list {
@@ -66,20 +67,14 @@
         &.is-active {
           li {
             display: block;
-            animation: fade 0.4s ease-in;
+            animation: fading 0.4s ease-in;
             transition: 0.4s;
-            @keyframes fade {
-              0% {
-                height: 0%;
+            @keyframes fading {
+              from {
+                height: 0;
               }
-              25% {
-                height: 25%;
-              }
-              50% {
-                height: 50%;
-              }
-              100% {
-                height: 100%;
+              to {
+                height: 30px;
               }
             }
           }
@@ -178,19 +173,27 @@
         &:last-child {
           margin-right: 0;
         }
+        svg {
+          fill:none;
+          stroke: $black;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -18px;
+          transition: 0.3s;
+        }
         &:hover {
           color: $green;
           svg {
             stroke: $green;
           }
         }
-        svg {
-          stroke: $black;
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          right: -18px;
+        &.is-active {
+          svg{
+            transform: rotate(180deg) translateY(50%);
+          }
         }
+       
       }
       &__link {
         @include font($font-poppins, 500, 15px, 1.5);
@@ -198,8 +201,11 @@
         display: none;
         width: 100%;
       }
-      &.is-active {
-        li {
+    
+      &__list {
+        display: none;
+        position: absolute;
+        &.is-active {
           display: block;
         }
       }

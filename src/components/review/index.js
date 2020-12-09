@@ -48,4 +48,4 @@ const Review = () => {
     return section.outerHTML;
 
 };
-Review();
+export default Review;

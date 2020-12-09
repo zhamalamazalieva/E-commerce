@@ -27,4 +27,4 @@ const Headline = () => {
     return section.outerHTML;
     console.log('aihj')
 };
-Headline();
+export default Headline;

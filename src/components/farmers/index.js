@@ -33,4 +33,4 @@ const Farmers = () => {
     return section.outerHTML;
 
 };
-Farmers();
+export default Farmers;

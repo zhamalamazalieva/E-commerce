@@ -25,4 +25,4 @@ const Blog = () => {
     document.body.append(section);
     return section.outerHTML;
 };
-Blog();
+export default Blog;

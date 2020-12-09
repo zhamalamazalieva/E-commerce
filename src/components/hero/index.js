@@ -22,4 +22,4 @@ const Hero = () =>{
     return tagSection;
 };
 
-Hero();
+export default Hero;
