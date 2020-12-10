@@ -1,5 +1,5 @@
-import MenuData from '../const/const.js';
 import SideBar from '../function/sidebar.js';
+import {MenuData} from '../const/const.js';
 import HeroItemRight from './hero_item_right.js';
 
 const Hero = () =>{
@@ -19,7 +19,7 @@ const Hero = () =>{
     </div>
     `;
 
-    return tagSection;
+    return tagSection.outerHTML;
 };
 
 export default Hero;

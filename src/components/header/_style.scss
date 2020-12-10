@@ -55,7 +55,7 @@
         }
         &.is-active{
           svg{
-            transform: rotate(180deg) translateY(50%);
+            transform: rotate(90deg) translateY(50%);
           }
         }
       }
@@ -112,7 +112,7 @@
       cursor: pointer;
       &.is-active {
         svg {
-          transform: rotate(-90deg);
+          transform: rotate(90deg);
         }
       }
       }
@@ -200,7 +200,7 @@
         }
         &.is-active {
           svg{
-            transform: rotate(180deg) translateY(50%);
+            transform: rotate(90deg) translateY(-50%);
           }
         }
        

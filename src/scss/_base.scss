@@ -108,11 +108,11 @@ ul li {
       }
 }
 .product{
-        min-width: 270px;
-        min-height: 324px;
+        max-height: 100%;
         margin: 0 15px;
-        border: 1px solid $lightgray;
         border-radius: 12px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
     
     &__wrapper{
         padding: 16px;
@@ -121,6 +121,11 @@ ul li {
         min-width: 237px;
         min-height: 180px;
         background-color: $gray-f9;
+        img{
+            max-width: 100%;
+            min-height: 180px;
+            border-radius: 12px;
+        }
     }
     &__name{
         @include font($font-poppins, 500, 15px, 1);
@@ -128,7 +133,7 @@ ul li {
         margin: 20px 0 8px 0;
     }
     &__description{
-        @include font($font-open, 400, 12px ,1);
+        @include font($font-open, 400, 12px ,1.4);
         color: $darkgray;
         margin-bottom: 16px;
     }

@@ -20,7 +20,7 @@ const SideBar = (MenuTitle, ArrayOfList, button) => {
             a.innerHTML = item
 
             return li.outerHTML
-        }).join('')};
+        }).join('')}
 
     </ul>
     <button class="btn btn--gray sidebar__button--category">${button}<svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">

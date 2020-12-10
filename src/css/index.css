@@ -251,11 +251,11 @@ ul li {
 }
 
 .product {
-  min-width: 270px;
-  min-height: 324px;
+  max-height: 100%;
   margin: 0 15px;
-  border: 1px solid #D1D1D1;
   border-radius: 12px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .product__wrapper {
@@ -266,6 +266,12 @@ ul li {
   min-width: 237px;
   min-height: 180px;
   background-color: #f9f9f9;
+}
+
+.product__img img {
+  max-width: 100%;
+  min-height: 180px;
+  border-radius: 12px;
 }
 
 .product__name {
@@ -281,7 +287,7 @@ ul li {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1;
+  line-height: 1.4;
   color: #575757;
   margin-bottom: 16px;
 }
@@ -412,6 +418,11 @@ ul li {
           transform: translateY(-50%);
 }
 
+.header__middle .searchbar__title.is-active svg {
+  -webkit-transform: rotate(90deg) translateY(50%);
+          transform: rotate(90deg) translateY(50%);
+}
+
 .header__middle .searchbar__list {
   width: 35%;
   position: absolute;
@@ -489,6 +500,11 @@ ul li {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+
+.header__middle .searchbar__button.is-active svg {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .header__middle .searchbar__input {
@@ -612,8 +628,8 @@ ul li {
 }
 
 .header__bottom .menu__title.is-active svg {
-  -webkit-transform: rotate(180deg) translateY(50%);
-          transform: rotate(180deg) translateY(50%);
+  -webkit-transform: rotate(90deg) translateY(-50%);
+          transform: rotate(90deg) translateY(-50%);
 }
 
 .header__bottom .menu__link {
