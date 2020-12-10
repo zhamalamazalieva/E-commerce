@@ -251,11 +251,11 @@ ul li {
 }
 
 .product {
-  max-height: 100%;
   margin: 0 15px;
   border-radius: 12px;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .product__wrapper {
@@ -274,6 +274,21 @@ ul li {
   border-radius: 12px;
 }
 
+.product__discount {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  padding: 0px 8px;
+  background-color: #D1D1D1;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #6a983c;
+  z-index: 2;
+}
+
 .product__name {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -290,6 +305,13 @@ ul li {
   line-height: 1.4;
   color: #575757;
   margin-bottom: 16px;
+  height: 35px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.product__description.is-active {
+  height: auto;
 }
 
 .product__price {
@@ -298,6 +320,15 @@ ul li {
   font-size: 18px;
   line-height: 1.5;
   color: #151515;
+}
+
+.product__old-price {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #A9A9A9;
+  text-decoration: line-through;
 }
 
 .section__row {
@@ -628,14 +659,14 @@ ul li {
 }
 
 .header__bottom .menu__title.is-active svg {
-  -webkit-transform: rotate(90deg) translateY(-50%);
-          transform: rotate(90deg) translateY(-50%);
+  -webkit-transform: rotate(90deg) translateX(-50%);
+          transform: rotate(90deg) translateX(-50%);
 }
 
 .header__bottom .menu__link {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1.5;
   color: #151515;
   display: none;
@@ -645,6 +676,13 @@ ul li {
 .header__bottom .menu__list {
   display: none;
   position: absolute;
+  top: 30px;
+  z-index: 2;
+  background-color: red;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  min-width: 120px;
+  padding: 0 10px;
 }
 
 .header__bottom .menu__list.is-active {

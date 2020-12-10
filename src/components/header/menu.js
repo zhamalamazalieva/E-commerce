@@ -1,4 +1,4 @@
-const Menu = (title) => {
+const Menu = (menuTitle, menuLink ) => {
     const div = document.createElement('div');
     div.className = 'header__menu menu';
     const arrayOfTitles = [
@@ -9,7 +9,6 @@ const Menu = (title) => {
         'Kitchen',
         'Baby',
         'Pharmacy'];
-    // const arrayOfList = ['Chocolate', 'Caramel', 'Apple pie'];
     const newArray = arrayOfTitles.map((item) => {
         const h3 = document.createElement('h3');
         h3.className = 'menu__title';

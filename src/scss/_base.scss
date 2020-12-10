@@ -108,10 +108,10 @@ ul li {
       }
 }
 .product{
-        max-height: 100%;
         margin: 0 15px;
         border-radius: 12px;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        position: relative;
 
     
     &__wrapper{
@@ -127,6 +127,18 @@ ul li {
             border-radius: 12px;
         }
     }
+    &__discount{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        padding: 0px 8px;
+        background-color: $lightgray;
+        border-radius: 12px;
+        @include font($font-poppins, 400, 12px ,1.4);
+        color: $green;
+        z-index: 2;
+
+    }
     &__name{
         @include font($font-poppins, 500, 15px, 1);
         color: $black;
@@ -136,11 +148,23 @@ ul li {
         @include font($font-open, 400, 12px ,1.4);
         color: $darkgray;
         margin-bottom: 16px;
+        height: 35px;
+        overflow: hidden;
+        cursor: pointer;
+        &.is-active{
+            height: auto;
+        }
     }
     &__price{
         @include font($font-poppins, 600, 18px, 1.5);
         color: $black;
     }
+    &__old-price{
+        @include font($font-poppins, 600, 12px, 1.5);
+        color: $gray;
+        text-decoration: line-through;
+    }
+
 }
 .section{
     &__row{
