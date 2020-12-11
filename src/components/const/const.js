@@ -18,10 +18,10 @@ export const MenuData = [
     ];
 
 export const Products  = [
-      /***************************Best Sellings******************************/
+      /*************************** Best Sellings 0 1 2******************************/
     {
        productTitle: 'Meat for Steak',
-       productDescription: 'A steak is a meat generally sliced across the muscle fibers, potentially including a bone',
+       productDescription: 'A steak is a meat generally sliced across the muscle fibers, potentially including a bone.A steak is a meat generally sliced across the muscle fibers, potentially including a bone',
        productPrice:7.00,
        productOldPrice:44.8,
        productButton:'Buy now',
@@ -46,7 +46,7 @@ export const Products  = [
       img:'./src/img/jpg/pie1.jpg',
       productDiscount:36,
   },
-    /***************************Best from Farmers******************************/
+    /*************************** Best from Farmers 3 4 5 ******************************/
     {
       productTitle: 'Best Mincemeat Pie',
       productDescription: 'Mincemeat is a classic pie flavor that traditionally contains fruit, pecans, brandy and citrus zest.is a classic pie flavor that traditionally contains fruit, pecans, brandy and citrus zest',
@@ -73,5 +73,57 @@ export const Products  = [
       productButton:'Buy now',
       img:'./src/img/jpg/chicken.jpg',
       productDiscount:45,
+    },
+        /*************************** Headline 6 7 8 ******************************/
+    {
+      productTitle: 'Best Mincemeat Pie',
+      productDescription: 'Mincemeat is a classic pie flavor that traditionally contains fruit, pecans, brandy and citrus zest.',
+      productPrice:5.75,
+      productOldPrice:38.47,
+      productButton:'Buy now',
+      img:'./src/img/jpg/chicken.jpg',
+      productDiscount:45,
+    },
+    {
+      productTitle: 'Best Mincemeat Pie',
+      productDescription: 'Mincemeat is a classic pie flavor that traditionally contains fruit, pecans, brandy and citrus zest.',
+      productPrice:5.75,
+      productOldPrice:38.47,
+      productButton:'Buy now',
+      img:'./src/img/jpg/chicken.jpg',
+      productDiscount:45,
+    },
+    {
+      productTitle: 'Best Mincemeat Pie',
+      productDescription: 'Mincemeat is a classic pie flavor that traditionally contains fruit, pecans, brandy and citrus zest.',
+      productPrice:5.75,
+      productOldPrice:38.47,
+      productButton:'Buy now',
+      img:'./src/img/jpg/chicken.jpg',
+      productDiscount:45,
+    },
+    {
+      productTitle: 'Best Mincemeat Pie',
+      productDescription: 'Mincemeat is a classic pie flavor that traditionally contains fruit, pecans, brandy and citrus zest.',
+      productPrice:5.75,
+      productOldPrice:38.47,
+      productButton:'Buy now',
+      img:'./src/img/jpg/chicken.jpg',
+      productDiscount:45,
     }
+
+];
+    /***************************Reviews******************************/
+export const Reviews = [
+    {
+      reviewsDescription:' This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here ',
+      reviewsAuthor:'Anna Smith',
+      reviewsImg:'./src/img/jpg/avatar.jpg',
+    },
+    {
+      reviewsDescription:'Had dinner with girl friends. Menu is perfect, something for everyone. Service was awesome and Jason was very accommodating! ',
+      reviewsAuthor:'Joe Biden',
+      reviewsImg:'./src/img/jpg/avatar2.jpeg',
+    },
+
 ]

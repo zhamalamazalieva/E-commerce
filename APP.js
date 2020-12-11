@@ -7,7 +7,8 @@ const root = () => {
     rootDiv.append(Header());
     rootDiv.append(Home());
     document.body.append(rootDiv);
-    return rootDiv;
     textHidden();
+
+    return rootDiv;
 };
 root ();

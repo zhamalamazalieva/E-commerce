@@ -306,7 +306,6 @@ ul li {
   color: #575757;
   margin-bottom: 16px;
   height: 35px;
-  overflow: hidden;
   cursor: pointer;
 }
 
@@ -847,10 +846,11 @@ ul li {
   max-width: 370px;
   max-height: 200px;
   border-radius: 12px;
-  background-color: yellow;
   padding: 24px 36px 40px 36px;
   position: relative;
   text-align: center;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .review__description {
@@ -879,12 +879,17 @@ ul li {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .review .slider {
-  margin: 40px 0 60px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 40px 0 60px;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -892,10 +897,6 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .headline__title {

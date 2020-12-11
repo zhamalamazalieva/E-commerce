@@ -10,10 +10,10 @@
         max-width: 370px;
         max-height: 200px;
         border-radius: 12px;
-        background-color: yellow;
         padding: 24px 36px 40px 36px;
         position: relative;
         text-align: center;
+        box-shadow: 0 0 10px 0 rgba($color: #000000, $alpha: .2);
     }
     &__description{
         @include font($font-poppins, 500, 15px, 22px);
@@ -33,11 +33,13 @@
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 50%;
+            object-fit: cover;
         }
     }
     .slider{
+        display: flex;
+        flex-wrap: nowrap;
         margin: 40px 0 60px;
         @include center();
-        flex-direction: column;
     }
 }
