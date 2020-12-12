@@ -10,6 +10,24 @@ const textHidden = () => {
         }
 
     });
+    
+  const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    // slidesPerGroup:1,
+    centeredSlides: true,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination:{
+        el:'.swiper-pagination',
+        clickable:true,
+        dynamicBullets:true
+    },
+    grabCursor:true,
+  });
 }
 export default textHidden;
 

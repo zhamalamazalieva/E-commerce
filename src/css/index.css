@@ -869,6 +869,34 @@ ul li {
 
 .review__row {
   padding-top: 64px;
+  position: relative;
+  z-index: 10;
+}
+
+.review__row::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  height: 100%;
+  width: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8);
+          box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8);
+}
+
+.review__row::after {
+  content: "";
+  position: absolute;
+  right: 0%;
+  top: 0;
+  z-index: 3;
+  height: 100%;
+  width: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8);
+          box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8);
 }
 
 .review__title {
@@ -881,7 +909,7 @@ ul li {
 
 .review__item {
   max-width: 370px;
-  max-height: 200px;
+  height: 200px;
   border-radius: 12px;
   padding: 24px 36px 40px 36px;
   position: relative;
@@ -920,7 +948,7 @@ ul li {
      object-fit: cover;
 }
 
-.review .slider {
+.slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -934,6 +962,53 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 0;
+}
+
+.swiper-container {
+  padding: 25px 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  z-index: 10;
+  background: #151515 none;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  outline: none;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: white;
+  font-size: 12px;
+}
+
+.swiper-button-prev {
+  left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.swiper-pagination {
+  bottom: -50px;
+  overflow: visible;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  line-height: 20px;
+  font-size: 15px;
+  background-color: #151515;
 }
 
 .headline__title {
