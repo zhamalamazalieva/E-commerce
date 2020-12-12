@@ -1,6 +1,5 @@
 import {Reviews} from '../const/const.js';
 import Title from '../function/title.js';
-// import Swiper from '../vendors/swiper.min.js';
 const Review = (reviewsTitle,reviewsDescription, reviewsAuthor, reviewsImg) => {
     const section = document.createElement('section');
     section.className = 'review';

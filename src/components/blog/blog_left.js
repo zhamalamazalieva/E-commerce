@@ -1,7 +1,9 @@
 const BlogLeft = () => {
-    const div = document.createElement('div');
-    div.className = 'blog__item--left blog__item';
-    div.innerHTML =
+    const a = document.createElement('a');
+    a.className = 'blog__item--left blog__item';
+    a.setAttribute('href', '#');
+
+    a.innerHTML =
     `
     <div class="blog__text text">
         <div class="text__top">
@@ -17,7 +19,7 @@ const BlogLeft = () => {
         </div>
     </div>
     `;
-    return div.outerHTML;
+    return a.outerHTML;
 };
 
 export default BlogLeft();

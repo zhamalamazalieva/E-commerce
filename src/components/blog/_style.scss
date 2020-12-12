@@ -1,4 +1,5 @@
 .blog{
+    padding-bottom: 64px;
     &__row{
         margin: 0 -15px;
     }
@@ -14,6 +15,11 @@
         background-color: red;
         background-size: cover;
         background-position: center;
+        transition: 0.5s;
+        &:hover{
+            box-shadow: 0 0 25px 0 rgba($color: #000000, $alpha: .5);
+            scale: (1);
+        }
 
     }
     &__img{
@@ -24,6 +30,11 @@
         background-size: cover;
         margin-bottom: 24px;
         border-radius: 12px;
+        transition: 0.5s;
+        &:hover{
+            box-shadow: 0 0 15px 0 rgba($color: #000000, $alpha: .5);
+            scale: (1);
+        }
     }
     &__suptitle{
         color: $green;
@@ -35,6 +46,10 @@
         @include font($font-poppins, 600, 18px, 22px);
         color: $black;
         margin-bottom: 16px;
+        transition: 0.3s;
+        &:hover{
+            color: $green;
+        }
     }
     &__author, &__time{
         @include font($font-open, 400, 12px, 1);
@@ -74,6 +89,10 @@
             @include font($font-poppins, 600, 22px, 1.5);
             color: $white;
             margin-bottom: 8px;
+            transition: 0.3s;
+            &:hover{
+                color: $green;
+            }
         }      
         &__author, &__time{
             @include font($font-open, 400, 12px, 1);
@@ -86,7 +105,6 @@
 /*Blog RIGHT
 =================================*/
 .right{
-    
     justify-content: space-between;
     align-items: center;
     margin-bottom: 16px;
@@ -94,11 +112,15 @@
         width: 96px;
         height: 96px;
         border-radius: 12px;
-
+        transition: 0.3s;
+        &:hover{
+            box-shadow:  0 0 15px 0 rgba($color: #000000, $alpha: .5);
+        }
         img{
             max-width: 100%;
+            height: 100%;
             border-radius: 12px;
-
+            object-fit: cover;
         }
     }
     &__description{
@@ -106,6 +128,10 @@
         color: $black;
         width: 225px;
         margin-bottom: 16px;
+        transition: 0.3s;
+        &:hover{
+            color: $green;
+        }
     }
     &__author, &__time{
         @include font($font-open, 400, 12px, 1);

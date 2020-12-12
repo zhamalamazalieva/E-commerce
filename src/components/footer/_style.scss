@@ -1,0 +1,46 @@
+.footer{
+    padding: 64px;
+    &__top{
+        margin: 0 -50px 48px;
+    }
+    &__title{
+        @include font($font-poppins, 600, 18px, 1.2);
+        color: $black;
+        margin-bottom: 16px;
+    }
+    &__item{
+        margin: 0 50px;
+    }
+    .list{
+        &__item{
+            margin-top: 16px;
+        }
+        &__link{
+            @include font($font-open, 400, 15px,1.2);
+            color: $green;
+        }
+    }
+    .tags{
+        display: flex;
+        flex-wrap: wrap;
+        &__link{
+            background-color: $gray-f9;
+            padding: 4px 10px;
+            margin:0 16px 16px 0;
+            border-radius: 12px;
+            transition: 0.3s;
+            @include font($font-poppins, 600, 12px, 1.5);
+            color: $black;
+            transition: 0.3s;
+            &:hover{
+                background-color: $green;
+                color: $white;
+            }
+        }
+    }
+    &__bottom{
+        @include font($font-poppins, 400, 14px, 1.2);
+        color: $black;
+        margin-top: 32px;
+    }
+}

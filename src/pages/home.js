@@ -4,7 +4,6 @@ import Farmers from '../components/farmers/index.js';
 import Headline from '../components/headline/index.js';
 import Hero from  '../components/hero/index.js';
 import Review from '../components/review/index.js';
-import Header from '../components/header/index.js'
 
 const Home = () => {
     const HomePage = document.createElement('main');

@@ -126,4 +126,6 @@ export const Reviews = [
       reviewsImg:'./src/img/jpg/avatar2.jpeg',
     },
 
-]
+];
+
+      /*************************** Footer List ******************************/

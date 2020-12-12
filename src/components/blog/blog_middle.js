@@ -1,7 +1,8 @@
 const BlogMiddle = () => {
-    const div = document.createElement('div');
-    div.className = 'blog__item blog__item--middle';
-    div.innerHTML = 
+    const a = document.createElement('a');
+    a.className = 'blog__item blog__item--middle';
+    a.setAttribute('href', '#');
+    a.innerHTML = 
     `
     <div class="blog__img"></div>
     <span class="blog__suptitle">Vegatables</span>
@@ -9,6 +10,6 @@ const BlogMiddle = () => {
     <span class="blog__author">Author</span>
     <time class="blog__time">14.12.2018</time>    
     `;
-     return div.outerHTML;
+     return a.outerHTML;
 };
 export default BlogMiddle();

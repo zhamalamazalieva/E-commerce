@@ -52,6 +52,9 @@ const Header = () => {
         h3.forEach((item, index) => {
             item.addEventListener('click', (event) =>{
                 event.target.classList.toggle('is-active');
+                h3.forEach((e, i) => {
+                    if (i != index) e.classList.remove('is-active');
+                });
                 ul.forEach((e, i) => {
                     if (i != index) e.classList.remove('is-active');
                 });
