@@ -2,7 +2,6 @@
   &__top {
     display: flex;
     justify-content: space-between;
-    border: none;
     border-bottom: 1px solid rgba($color: $black, $alpha: 0.05);
     padding: 16px 0;
     .nav {
@@ -13,7 +12,7 @@
         margin-left: 38px;
       }
       &__link {
-        @include font($font-open, 400, 12px, 1.5);
+        @include font(400, 12px, 1.5,$font-open);
         cursor: pointer;
         transition: 0.3s;
         &:hover{
@@ -27,23 +26,22 @@
         margin-right: 33px;
       }
       &__link {
-        @include font($font-open, 400, 12px, 1.5);
+        @include font(400, 12px, 1.5,$font-open);
       }
     }
   }
   &__middle {
     padding: 40px 0 48px;
-    @include center(flex, space-between, center);
+    @include center(space-between);
     .searchbar {
       padding: 10px 16px;
       background-color: $gray-f9;
       max-height: 42px;
       border-radius: 12px;
-      display: flex;
-      align-items: center;
+      @include center();
       position: relative;
       &__title {
-        @include font($font-poppins, 600, 16px, 1.2);
+        @include font(600, 16px, 1.2);
         position: relative;
         cursor: pointer;
         svg {
@@ -53,11 +51,7 @@
           top: 50%;
           transform: translateY(-50%);
         }
-        &.is-active{
-          svg{
-            transform: rotate(90deg) translateY(50%);
-          }
-        }
+        
       }
       &__list {
         width: 35%;
@@ -72,14 +66,18 @@
         &.is-active {
           li {
             display: block;
-            animation: fading 0.4s ease-in;
+            animation: rotateMenu 500ms ease-in-out forwards;
+            transform-origin: top center;
             transition: 0.4s;
-            @keyframes fading {
-              from {
-                height: 0;
+            @keyframes rotateMenu {
+              0% {
+                transform: rotateX(-90deg)
               }
-              to {
-                height: 30px;
+              70% {
+                transform: rotateX(20deg)
+              }
+              100% {
+                transform: rotateX(0deg)
               }
             }
           }
@@ -87,18 +85,22 @@
       }
       &__item {
       display: none;
-      @include font($font-poppins, 600, 14px, 1.2);
       padding: 5px 15px;
       cursor: pointer;
       transition: 0.3s;
+      a{
+        @include font(600, 14px, 1.2);
+        color: $black;
+      }
       &:last-child{
         border-bottom-left-radius:12px;
         border-bottom-right-radius:12px;
       }
       &:hover{
         background-color: $green;
-        color: $white;
-
+        a{
+          color: $white;
+        }
       }
       }
       &__button {
@@ -110,11 +112,6 @@
       width: 16px;
       @include center();
       cursor: pointer;
-      &.is-active {
-        svg {
-          transform: rotate(90deg);
-        }
-      }
       }
       &__input {
       @include font($font-open, 600, 14px, 1.5);
@@ -132,6 +129,7 @@
     }
   }
   &__logo {
+    cursor: pointer;
     svg {
       fill: $black;
     }
@@ -154,7 +152,7 @@
       background-color: red;
       color: $white;
       @include center();
-      @include font($font-poppins, 400, 12px, 1);
+      @include font(400, 12px, 1);
     }
   }
   &__bottom {
@@ -174,7 +172,7 @@
     .menu {
       display: flex;
       &__title {
-        @include font($font-poppins, 500, 15px, 1);
+        @include font(500, 15px, 1);
         color: $black;
         cursor: pointer;
         position: relative;
@@ -206,7 +204,7 @@
        
       }
       &__link {
-        @include font($font-poppins, 500, 12px, 1.5);
+        @include font(500, 12px, 1.5);
         color: $black;
         display: none;
         width: 100%;

@@ -1,4 +1,4 @@
-import {Reviews} from '../const/const.js';
+import {Reviews} from './const.js';
 import Title from '../function/title.js';
 const Review = (reviewsTitle,reviewsDescription, reviewsAuthor, reviewsImg) => {
     const section = document.createElement('section');

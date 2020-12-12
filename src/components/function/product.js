@@ -19,7 +19,7 @@ const Product = (imgSrc,productDiscount, produtTitle, productDescription, produc
                 <span class="product__price">${productPrice} USD</span>
                 <span class="product__old-price">${productOldPrice}</span>
             </div>
-                <button class="product__button btn-small btn--green">${productButton}</button>
+                <button class="product__button btn-small">${productButton}</button>
             </div>
         </div>
     </div>

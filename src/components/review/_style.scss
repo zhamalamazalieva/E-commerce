@@ -3,7 +3,7 @@
         padding-top: 64px;
     }
     &__title{
-        @include font($font-poppins, 600, 18px, 1.5);
+        @include font(600, 18px, 1.5);
         color: $black;
     }
     &__item{
@@ -16,11 +16,11 @@
         box-shadow: 0 0 10px 0 rgba($color: #000000, $alpha: .2);
     }
     &__description{
-        @include font($font-poppins, 500, 15px, 22px);
+        @include font(500, 15px, 22px);
         color: $black;
     }
     &__author{
-        @include font($font-poppins, 600, 12px, 1);
+        @include font(600, 12px, 1);
         color: $darkgray;
         margin: 24px 0 16px;
     }

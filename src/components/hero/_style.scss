@@ -5,11 +5,12 @@
   &__wrapper {
     margin: 0 -15px;
   }
-  &__item--right {
+  &__item {
     position: relative;
     background-color: $gray-f9;
     margin: 0 15px;
     border-radius: 12px;
+    height: 280px;
   }
   &__opacity {
     position: absolute;
@@ -29,19 +30,21 @@
     z-index: 4;
   }
   &__suptitle {
-    @include font($font-poppins, 600, 12px, 1.2);
+    @include font(600, 12px, 1.2);
     color: $green;
     margin-bottom: 18px;
   }
   &__title {
-    @include font($font-poppins, 600, 22px, 1.5);
+    @include font(600, 22px, 1.5);
     color: $white;
     margin-bottom: 85px;
   }
   &__img {
-    max-width: 100%;
-    min-width: 100%;
-    height: auto;
-    border-radius: 12px;
+    img{
+      max-width: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      border-radius: 12px;
+    }
   }
 }

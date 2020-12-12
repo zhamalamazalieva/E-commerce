@@ -1,6 +1,6 @@
 import SideBar from '../function/sidebar.js';
 import Product from '../function/product.js';
-import {MenuData, Products} from '../const/const.js';
+import {MenuData, Products} from './const.js';
 
 const bestSelling = () => {
     const section = document.createElement('section');
@@ -10,7 +10,7 @@ const bestSelling = () => {
     <div class="container">
         <div class="bestselling__row row">
             <div class="col-3">
-                ${SideBar(MenuData[1].MenuTitle, MenuData[1].ArrayOfList, MenuData[1].button)}
+                ${SideBar(MenuData[0].MenuTitle, MenuData[0].ArrayOfList, MenuData[0].button)}
             </div>
             <div class="col-9">
                 <div class="row margin">

@@ -1,6 +1,6 @@
 .headline{
     &__title{
-        @include font($font-poppins, 600, 18px, 1.5);
+        @include font(600, 18px, 1.5);
         color: $black;
     }
     &__top{

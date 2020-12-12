@@ -1,6 +1,6 @@
 import SideBar from '../function/sidebar.js';
 import Product from '../function/product.js';
-import {MenuData, Products} from '../const/const.js';
+import {MenuData, Products} from './const.js';
 const Farmers = () => {
     const section = document.createElement('section');
     const array = ['Carrots','Tomatoes','Potatoes','Chicken','Pork'];
@@ -11,19 +11,20 @@ const Farmers = () => {
     <div class="container">
     <div class="farmers__row row">
         <div class="col-3">
-            ${SideBar(MenuData[2].MenuTitle, MenuData[2].ArrayOfList, MenuData[2].button)}
+            ${SideBar(MenuData[0].MenuTitle, MenuData[0].ArrayOfList, MenuData[0].button)}
         </div>
         <div class="col-9">
             <div class="row margin">
                 <div class="col-4">
-                ${Product(Products[3].img,Products[3].productDiscount, Products[3].productTitle, Products[3].productDescription, Products[3].productPrice,Products[3].productOldPrice, Products[3].productButton)}
+                ${Product(Products[0].img,Products[0].productDiscount, Products[0].productTitle, Products[0].productDescription, Products[0].productPrice,Products[0].productOldPrice, Products[0].productButton)}
+                </div>    
+                <div class="col-4">
+                ${Product(Products[1].img,Products[1].productDiscount, Products[1].productTitle, Products[1].productDescription, Products[1].productPrice,Products[1].productOldPrice, Products[1].productButton)}
                 </div>
                 <div class="col-4">
-                ${Product(Products[4].img,Products[4].productDiscount, Products[4].productTitle, Products[4].productDescription, Products[4].productPrice,Products[4].productOldPrice, Products[4].productButton)}
+                ${Product(Products[2].img,Products[2].productDiscount, Products[2].productTitle, Products[2].productDescription, Products[2].productPrice,Products[2].productOldPrice, Products[2].productButton)}
                 </div>
-                <div class="col-4">
-                ${Product(Products[5].img,Products[5].productDiscount, Products[5].productTitle, Products[5].productDescription, Products[5].productPrice,Products[5].productOldPrice, Products[5].productButton)}
-            </div>
+             
             </div>
         </div>
     </div>  

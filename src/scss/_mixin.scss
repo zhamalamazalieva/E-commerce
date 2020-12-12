@@ -1,11 +1,12 @@
-@mixin font($font-poppins, $weight, $size, $height){
-    font-family: $font-poppins;
+@mixin font( $weight, $size, $height,$family:"Poppins"){
     font-weight: $weight;
     font-size: $size;
     line-height: $height;
+    font-family: $family;
+
 }
-@mixin center($flex:flex,$jcenter:center,$acenter:center){
-    display: $flex;
+@mixin center($jcenter:center,$acenter:center){
+    display:flex;
     justify-content: $jcenter;
     align-items: $acenter;
 }

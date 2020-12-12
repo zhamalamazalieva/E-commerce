@@ -4,7 +4,7 @@
         margin: 0 -50px 48px;
     }
     &__title{
-        @include font($font-poppins, 600, 18px, 1.2);
+        @include font( 600, 18px, 1.2);
         color: $black;
         margin-bottom: 16px;
     }
@@ -16,7 +16,7 @@
             margin-top: 16px;
         }
         &__link{
-            @include font($font-open, 400, 15px,1.2);
+            @include font(400, 15px,1.2,$font-open);
             color: $green;
         }
     }
@@ -29,7 +29,7 @@
             margin:0 16px 16px 0;
             border-radius: 12px;
             transition: 0.3s;
-            @include font($font-poppins, 600, 12px, 1.5);
+            @include font(600, 12px, 1.5);
             color: $black;
             transition: 0.3s;
             &:hover{
@@ -39,7 +39,7 @@
         }
     }
     &__bottom{
-        @include font($font-poppins, 400, 14px, 1.2);
+        @include font(400, 14px, 1.2);
         color: $black;
         margin-top: 32px;
     }

@@ -9,10 +9,10 @@ const Search = () => {
         </svg>
         </h3>
         <ul class="searchbar__list">
-            <li class="searchbar__item" >Drinks</li>
-            <li class="searchbar__item" >Bakery</li>
-            <li class="searchbar__item" >Pharmacy</li>
-            <li class="searchbar__item" >Meat and fish</li>
+            <li class="searchbar__item"><a href="#">Drinks</a></li>
+            <li class="searchbar__item"><a href="#">Bakery</a></li>
+            <li class="searchbar__item"><a href="#">Pharmacy</a></li>
+            <li class="searchbar__item"><a href="#">Meat and fish</a></li>
         </ul>
         <label>
         <input class="searchbar__input" placeholder="Search Product, categories...">
