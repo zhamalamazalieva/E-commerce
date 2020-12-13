@@ -14,7 +14,7 @@ const textHidden = () => {
   const swiper = new Swiper('.swiper-container', {
     slidesPerView: 4,
     spaceBetween: 30,
-    // slidesPerGroup:1,
+    slidesPerGroup:1,
     centeredSlides: true,
     loop: true,
     navigation: {

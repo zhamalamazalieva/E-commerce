@@ -776,6 +776,10 @@ ul li {
   margin-bottom: 85px;
 }
 
+.hero__img {
+  overflow: hidden;
+}
+
 .hero__img img {
   max-width: 100%;
   min-width: 100%;
@@ -867,36 +871,13 @@ ul li {
   color: #151515;
 }
 
-.review__row {
+.review {
   padding-top: 64px;
+}
+
+.review__row {
   position: relative;
   z-index: 10;
-}
-
-.review__row::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 2;
-  height: 100%;
-  width: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  -webkit-box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8);
-          box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8);
-}
-
-.review__row::after {
-  content: "";
-  position: absolute;
-  right: 0%;
-  top: 0;
-  z-index: 3;
-  height: 100%;
-  width: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  -webkit-box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8);
-          box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8);
 }
 
 .review__title {
@@ -909,7 +890,6 @@ ul li {
 
 .review__item {
   max-width: 370px;
-  height: 200px;
   border-radius: 12px;
   padding: 24px 36px 40px 36px;
   position: relative;

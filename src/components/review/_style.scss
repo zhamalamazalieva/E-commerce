@@ -1,39 +1,39 @@
 .review{
+    padding-top: 64px;
    
-    &__row{
-        padding-top: 64px;
+   &__row{
         position: relative;
         z-index: 10;
-        &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: 2;
-            height: 100%;
-            width: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8);
-        }
-        &::after {
-            content: "";
-            position: absolute;
-            right:0%;
-            top: 0;
-            z-index: 3;
-            height: 100%;
-            width: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8);
-        }
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     left: 0;
+        //     top: 0;
+        //     z-index: 2;
+        //     height: 100%;
+        //     width: 20px;
+        //     background-color: rgba(255, 255, 255, 0.8);
+        //     box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8);
+        // }
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     right:0%;
+        //     top: 0;
+        //     z-index: 3;
+        //     height: 100%;
+        //     width: 20px;
+        //     background-color: rgba(255, 255, 255, 0.8);
+        //     box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8);
+        // }
     }
+    
     &__title{
         @include font(600, 18px, 1.5);
         color: $black;
     }
     &__item{
         max-width: 370px;
-        height: 200px;
         border-radius: 12px;
         padding: 24px 36px 40px 36px;
         position: relative;

@@ -5,13 +5,12 @@ const Review = (reviewsDescription, reviewsAuthor) => {
     section.className = 'review';
     section.innerHTML =
     `
-   
-<div class="container">
-       ${Title('Our customers says','Button')}
-    <div class="review__row column">
-
+    <div class="container">
+    ${Title('Our customers says','Button')}
+    </div>
+    <div class="review__row">
         <div class="swiper-container swiper__slider">
-
+      
          <div class="swiper-wrapper slider">
             
         
@@ -63,8 +62,7 @@ const Review = (reviewsDescription, reviewsAuthor) => {
         <div class="swiper-button-next"></div>
         <div class="swiper-pagination"></div>
         </div>
-    </div>
-</div>
+        </div>
   
     `;
     return section.outerHTML;
