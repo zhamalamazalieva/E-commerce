@@ -12,7 +12,7 @@ const textHidden = () => {
     });
     
   const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 4,
+    slidesPerView: 4.5,
     spaceBetween: 30,
     slidesPerGroup:1,
     centeredSlides: true,

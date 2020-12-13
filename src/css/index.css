@@ -169,7 +169,7 @@ ul li {
   padding: 12px 30px 12px 15px;
   border-radius: 12px;
   background-color: #f9f9f9;
-  border: transparent;
+  border: 2px solid transparent;
   position: relative;
   font-weight: 500;
   font-size: 15px;

@@ -47,7 +47,7 @@ ul li {
     padding: 12px 30px 12px 15px;
     border-radius: 12px;
     background-color: $gray-f9;
-    border:transparent;
+    border: 2px solid transparent;
     position: relative;
     @include font(500, 15px, 1.5);
     color: $black;
