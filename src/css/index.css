@@ -1283,3 +1283,88 @@ ul li {
   color: #151515;
   margin-top: 32px;
 }
+
+.top__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top .nav {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top .nav__link {
+  font-weight: "Open Sans", sans-serif;
+  font-size: 400;
+  line-height: 12px;
+  font-family: 1.5;
+  color: #151515;
+}
+
+.top .nav__item {
+  margin-right: 5px;
+}
+
+.top .nav__item:last-child {
+  margin-right: 0;
+}
+
+.top__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5;
+  font-family: "Poppins";
+  color: #151515;
+}
+
+.top__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 25px;
+}
+
+.top__item:first-child {
+  margin-left: 0;
+}
+
+.top__item span {
+  font-weight: "Open Sans", sans-serif;
+  font-size: 400;
+  line-height: 12px;
+  font-family: 1.5;
+  color: #151515;
+}
+
+.top__item svg {
+  stroke: #6a983c;
+  margin-right: 5px;
+}
+
+.top__counter {
+  padding: 4px 8px;
+  background-color: #D1D1D1;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: "Poppins";
+  color: #6a983c;
+  border-radius: 12px;
+  margin-right: 5px;
+}

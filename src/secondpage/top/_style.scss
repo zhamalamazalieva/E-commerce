@@ -1,0 +1,47 @@
+.top{
+    &__row{
+        @include center(space-between);
+    }
+    .nav{
+        margin: 15px 0;
+        display: flex;
+        &__link{
+            @include font($font-open, 400, 12px, 1.5);
+            color: $black;
+        }
+        &__item{
+            margin-right: 5px;
+            &:last-child{
+                margin-right: 0;
+            }
+
+        }
+    }
+    &__title{
+        @include font(600, 32px, 1.5);
+        color: $black;
+    }
+    &__item{
+        @include center();
+        margin-left: 25px;
+        &:first-child{
+            margin-left: 0;
+        }
+        span{
+            @include font($font-open, 400, 12px, 1.5);
+            color: $black;
+        }
+        svg{
+            stroke: $green;
+            margin-right: 5px;
+        }
+    }
+    &__counter{
+        padding: 4px 8px;
+        background-color: $lightgray;
+        @include font(600, 12px, 1.4);
+        color: $green;
+        border-radius: 12px;
+        margin-right: 5px;
+    }
+}
